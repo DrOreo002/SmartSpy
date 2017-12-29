@@ -234,6 +234,7 @@ public class SpyManager {
         }
         player.sendMessage(main.getLang().getMessage(Messages.TOGGLE_OFF));
         enabled.remove(player.getUniqueId());
+        spied_player.remove(player.getUniqueId());
     }
 
     public void addSpiedPlayer(Player executor, String name) {
@@ -259,7 +260,7 @@ public class SpyManager {
         }
 
         if (!spied_player.containsKey(executor.getUniqueId())) {
-            spied_player.put(executor.getUniqueId(), new HashSet<UUID>());
+            spied_player.put(executor.getUniqueId(), new HashSet<>());
         }
 
         if (spied_player.get(executor.getUniqueId()).contains(target.getUniqueId())) {
@@ -300,4 +301,46 @@ public class SpyManager {
         spied_player.remove(executor.getUniqueId());
     }
 
+    public void addEnableSelfJoin(Player player) {
+        if (enabled.contains(player.getUniqueId())) {
+            player.sendMessage(main.getLang().getMessage(Messages.TOGGLE_ON_ALREADY));
+            return;
+        }
+        enabled.add(player.getUniqueId());
+        player.sendMessage(main.getLang().getMessage(Messages.TOGGLE_ON_JOIN));
+    }
+
+    public void removeEnableSelfLeave(Player player) {
+        if (!enabled.contains(player.getUniqueId())) {
+            return;
+        }
+        enabled.remove(player.getUniqueId());
+        Bukkit.getLogger().info(new SpyPlaceholder().replaceText(PlaceholderType.REPLACE_PLAYER_NAME, main.getLang().getMessage(Messages.TOGGLE_OFF_LEAVE), player.getName()));
+    }
+
+    @SuppressWarnings("deprecation")
+    public void removeSpiedPlayerQuit(Player executor, String name) {
+        if (!spied_player.containsKey(executor.getUniqueId())) {
+            return;
+        }
+        Player target = Bukkit.getPlayerExact(name);
+        if (target == null) {
+            OfflinePlayer off = Bukkit.getOfflinePlayer(name);
+            if (!off.hasPlayedBefore()) {
+                return;
+            }
+            if (!spied_player.get(executor.getUniqueId()).contains(off.getUniqueId())) {
+                return;
+            }
+            executor.sendMessage(new SpyPlaceholder().replaceText(PlaceholderType.REPLACE_PLAYER_NAME, main.getLang().getMessage(Messages.SPIED_PLAYER_QUIT), name));
+            spied_player.remove(executor.getUniqueId());
+            return;
+        }
+
+        if (!spied_player.get(executor.getUniqueId()).contains(target.getUniqueId())) {
+            return;
+        }
+        executor.sendMessage(new SpyPlaceholder().replaceText(PlaceholderType.REPLACE_PLAYER_NAME, main.getLang().getMessage(Messages.SPIED_PLAYER_QUIT), name));
+        spied_player.remove(executor.getUniqueId());
+    }
 }

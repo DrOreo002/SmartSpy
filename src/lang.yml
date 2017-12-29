@@ -23,7 +23,7 @@ Help-Message:
   - '&7[&c&l?&7] &c/spy off [player] &f: Toggle spy off for yourself or other player'
   - '&7[&c&l?&7] &c/spy player add [player] &f: Add that player into the spied player'
   - '&7[&c&l?&7] &c/spy player remove [player] &f: Remove the player from the spied player list'
-Join-Message: 'Your &6&oSmartSpy &fhas been enabled automatically'
+Chat-When-Enabled: '&cWarning. &fYou cannot see other people''s chat message. Including YOU when the &6&oSmartSpy &fis &aenabled'
 Console-Only: 'Console only.'
 Default-Message: 'Please use &6/spy help &fto see all of the commands or &6/spy about &fto see the plugin info'
 Default-Message-Console: 'Please use &6/spyc help &fto see all of the commands for &c&oConsole &for &6/spy about &fto see the plugin info'
@@ -40,6 +40,9 @@ Spy-Format-Blocked: '{player} &7> &cBLOCKED'
 Spy-For-Player-Format-Blocked: '&c{player} &7> &cBLOCKED'
 #Done....
 Plugin-Reloaded: 'config.yml and lang.yml has been &c&oReloaded!'
+Toggle-On-Join: 'Your &6&oSmartSpy &fhas been enabled automatically. Contact server admin if you don''t like this'
+#This will show on the console, and has 1 placeholder which is {player}
+Toggle-Off-Leave: '{player}, had &6&oSmartSpy &fdisabled on &cLeave'
 Toggle-On: 'SmartSpy has been enabled!.  Warn!, this may make you can''t receive any chat!. Please tell the server Admin if you have any problems!.'
 Toggle-On-Already: 'SmartSpy already enabled!'
 Toggle-Off: 'SmartSpy has been disabled!'

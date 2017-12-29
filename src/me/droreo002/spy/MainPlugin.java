@@ -4,6 +4,8 @@ import me.droreo002.spy.commands.ConsoleCommand;
 import me.droreo002.spy.commands.MainCommand;
 import me.droreo002.spy.lang.Lang;
 import me.droreo002.spy.listener.CommandListener;
+import me.droreo002.spy.listener.JoinListener;
+import me.droreo002.spy.listener.LeaveListener;
 import me.droreo002.spy.manager.ConfigManager;
 import me.droreo002.spy.manager.SpyManager;
 import org.bukkit.Bukkit;
@@ -41,6 +43,8 @@ public class MainPlugin extends JavaPlugin {
         Bukkit.getPluginCommand("smartspy").setExecutor(new MainCommand(this));
         Bukkit.getPluginCommand("smartspyconsole").setExecutor(new ConsoleCommand(this));
         Bukkit.getPluginManager().registerEvents(new CommandListener(this), this);
+        Bukkit.getPluginManager().registerEvents(new JoinListener(this), this);
+        Bukkit.getPluginManager().registerEvents(new LeaveListener(this), this);
     }
 
     public void reloadPrefix() {

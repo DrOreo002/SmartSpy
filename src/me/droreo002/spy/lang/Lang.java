@@ -37,6 +37,14 @@ public class Lang {
     public String getMessage(Messages type) {
 
         switch (type) {
+            case SPIED_PLAYER_QUIT:
+                return plugin.getPrefix() + plugin.translateText(getLang().getString("Spied-Player-Quit"));
+            case CHAT_WHEN_ENABLED:
+                return plugin.getPrefix() + plugin.translateText(getLang().getString("Chat-When-Enabled"));
+            case TOGGLE_OFF_LEAVE:
+                return plugin.getPrefix() + plugin.translateText(getLang().getString("Toggle-Off-Leave"));
+            case TOGGLE_ON_JOIN:
+                return plugin.getPrefix() + plugin.translateText(getLang().getString("Toggle-On-Join"));
             case SPY_FAIL_SELF:
                 return plugin.getPrefix() + plugin.translateText(getLang().getString("Cannot-Spy-Self"));
             case SPY_FAIL_PERMS:

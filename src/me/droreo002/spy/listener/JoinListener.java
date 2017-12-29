@@ -18,7 +18,7 @@ public class JoinListener implements Listener {
     public void onJoin(PlayerJoinEvent e) {
         Player player = e.getPlayer();
         if (player.hasPermission("spy.enableOnJoin") && main.getConfigManager().getConfig().getBoolean("EnableOnJoin")) {
-            main.getSpyManager().addEnabledSelf(player);
+            main.getSpyManager().addEnableSelfJoin(player);
         }
     }
 }

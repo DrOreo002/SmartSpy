@@ -18,6 +18,8 @@ DisableOnLeave: true
 #Also this will only work on player that enabled their spy!
 #Perms to bypass : spy.bypass.chatreceive
 DisableChatReceive: false
+#This one will remove the spied player ( using the /spy player add <name> command ). When they quit!
+RemoveSpiedPlayerOnQuit: true
 #Add a command here if you want to ignore it.
 #WARN > Please use " / " otherwise it will not work!
 #Also it will send you a message of Spy-Format-Blocked on the lang.yml. If you don't want it to send you that message set this to false
