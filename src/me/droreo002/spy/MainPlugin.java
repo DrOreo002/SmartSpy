@@ -38,6 +38,7 @@ public class MainPlugin extends JavaPlugin {
         getLogger().info("> Version : " + getDescription().getVersion());
         getLogger().info("> Author : " + getDescription().getAuthors());
         getLogger().info("-========================================-");
+        getLogger().info("Github Test : Edit this to test commit and so on");
 
         //Register Command and Listener Here
         Bukkit.getPluginCommand("smartspy").setExecutor(new MainCommand(this));
