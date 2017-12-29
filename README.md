@@ -9,3 +9,5 @@ to improve the plugin and making it better!. Btw this is the first Spy plugin th
 > Will you upload more source - code on GitHub ?
 > Well I'm not going to upload all of my project into GitHub, because GitHub is not really easy to control and setup
 
+> I want to contribute to this project but I don't know how!
+> Watch this video, it might help you! : https://www.youtube.com/watch?v=uUzRMOCBorg&t=233s . Btw its for IntelliJ user only, I don't know how to use GitHub on Eclipse.
