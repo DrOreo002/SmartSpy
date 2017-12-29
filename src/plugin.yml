@@ -1,0 +1,47 @@
+main: me.droreo002.spy.MainPlugin
+name: SmartSpy
+author: [DrOreo002]
+version: 1.6
+
+commands:
+  smartspy:
+    aliases: [spy, smarts, sspy]
+  smartspyconsole:
+    aliases: [spyc, smartconsole, smartspyc, sspyc, sspyconsole]
+permissions:
+  spy.*:
+    default: op
+    children:
+      spy.other: true
+      spy.toggle.other: true
+      spy.toggle.other.deny: true
+      spy.toggle: true
+      spy.admin: true
+      spy.disableOnLeave: true
+      spy.enableOnJoin: true
+      spy.command: true
+      spy.bypass.blocked: true
+      spy.ignore: true
+      spy.bypass.chatreceive: true
+  spy.toggle.other.deny:
+    default: op
+  spy.toggle.other:
+    default: op
+  spy.ignore:
+    default: op
+  spy.bypass.blocked:
+    default: op
+  spy.bypass.chatreceive:
+    default: op
+  spy.toggle:
+    default: op
+  spy.admin:
+    default: op
+  spy.enableOnJoin:
+    default: op
+  spy.disableOnLeave:
+    default: op
+  spy.command:
+    default: op
+  spy.other:
+    default: op

@@ -1,0 +1,94 @@
+#   Welcome to Lang.yml!   #
+# Here, you can use color codes. And also PlaceHolder!#
+# but, there's only few message that support placeholder :(#
+# but hey!, don't worry there's more to come!#
+# sorry if there's some typos or grammar error, I'm not really good at English...#
+
+# WARN #
+#DO NOT DELETE ANY OF THE LANG.YML except THE STRING / TEXT.
+#MAKE SURE YOU'VE PLACED ' AT THE LAST STRING / TEXT
+#Ty
+
+#Last Edited : DrOreo002 > 25 December 2017 : 10:23 PM : WITA (Indonesia)
+
+###########################
+#                         #
+#     Common Messages     #
+#                         #
+###########################
+Help-Message:
+  - '&7[&a+&7]&8&m=============&7&l[ &6&oSmart Spy &7&l]&8&m=============&7[&a+&7]'
+  - '&7[&c&l?&7] &c/spy help &f: Show this message'
+  - '&7[&c&l?&7] &c/spy on [player] &f: Toggle spy on for yourself or other player'
+  - '&7[&c&l?&7] &c/spy off [player] &f: Toggle spy off for yourself or other player'
+  - '&7[&c&l?&7] &c/spy player add [player] &f: Add that player into the spied player'
+  - '&7[&c&l?&7] &c/spy player remove [player] &f: Remove the player from the spied player list'
+Join-Message: 'Your &6&oSmartSpy &fhas been enabled automatically'
+Console-Only: 'Console only.'
+Default-Message: 'Please use &6/spy help &fto see all of the commands or &6/spy about &fto see the plugin info'
+Default-Message-Console: 'Please use &6/spyc help &fto see all of the commands for &c&oConsole &for &6/spy about &fto see the plugin info'
+Spy-Not-Enabled: 'Your &6&oSmartSpy &f, is not enabled yet. Please enable it before using this command!'
+Invalid-Usage: 'I cannot recognize that command. Please type /spy help'
+#Did you noticed the double '' ?. Please always add double '' if you want to add some letters like don't, didn't, etc.
+No-Permission: 'You don''t have the right permission to do this!'
+#This is the spy format, you can change this whatever you want. You'll get this message when you have your SmartSpy enabled.
+#also the {player} placeholder will be replaced by the player's name that executed the command!
+Spy-Format: '{player} &7> {command}'
+Spy-For-Player-Format: '&c{player} &7> &6{command}'
+#Warn : Spy-Format-Blocked doesn't have the {command} placeholder
+Spy-Format-Blocked: '{player} &7> &cBLOCKED'
+Spy-For-Player-Format-Blocked: '&c{player} &7> &cBLOCKED'
+#Done....
+Plugin-Reloaded: 'config.yml and lang.yml has been &c&oReloaded!'
+Toggle-On: 'SmartSpy has been enabled!.  Warn!, this may make you can''t receive any chat!. Please tell the server Admin if you have any problems!.'
+Toggle-On-Already: 'SmartSpy already enabled!'
+Toggle-Off: 'SmartSpy has been disabled!'
+Toggle-Off-Already: 'SmartSpy already disabled!'
+#This placeholder will replace the player's name that executed the command /spy on <player>
+Toggle-On-Other-Message: '&c{player} &f, has enabled your &6&oSmartSpy'
+Toggle-Off-Other-Message: '&c{player} &f, has disabled your &6&oSmartSpy'
+#Done
+Too-Much-Args: 'Too much args!, please use /spy help. If you''re confuse!'
+###########################
+#                         #
+#     Admin Messages      #
+#                         #
+###########################
+Help-Message-Console:
+  - '&8/spyc : Shows this message'
+  - '&8/spyc reload : Reload the config.yml'
+  - '&8/spyc clear : Clears all of the player that has SmartSpy enabled'
+  - '&8/spyc about : See the plugin Infos'
+  - 'Yep only this. More to come!'
+#For this message, it has 1 placeholder. Which is {player}, it will change into player's name that forced to toggle on his/her spy from /spy on <name> : Command!
+Toggle-On-Other: 'You just toggled on &6&oSmartSpy for {player}!'
+Toggle-Off-Other: 'You just toggled off &6&oSmartSpy for {player}!'
+Toggle-Other-Failed: 'You can''t toggle on / off &6&oSmartSpy &f, for that player! (&c{player}&f)'
+Toggle-On-Other-Already: '{player} already has &6&oSmartSpy toggled on!'
+Toggle-Off-Other-Already: '{player} already has &6&oSmartSpy toggled off!'
+#For the rest?. Nope.
+###########################
+#                         #
+#     Other Message       #
+#                         #
+###########################
+
+#This is like the message that is not really that important. Well if you want to change it, you can do this here!
+Cleared: 'Cleared all of the player that has &6&oSmartSpy &fenabled!'
+Cannot-Spy-Self: 'No.., no..., no!'
+#oh also, this message below, has 1 placeholder which is {player}.
+Cleared-Message: '{player}, has disabled your &6&oSmartSpy!'
+Never-Joined: 'Cannot find {player}, that player prob never joined the player before!'
+Player-Not-Online: '{player} is not online. Please select any online players! (&c&oCase Sensitive&f)'
+Already-Spy: 'Already spying for that player! (&c{player}&f)'
+Spy-Done: 'Now spying for : {player}'
+Player-Removed: 'Removed {player} from the spy list.'
+Not-On-Spy-List: 'That player is not on the Spy list yet! (This is case sensitive)'
+Spy-Fail-Perms: '{player} has the &cspy.other.deny &fpermission, you cannot do this command!'
+Spy-Fail-Enabled: '{player} has the &6&oSmartSpy &fenabled on him / her, you cannot do this command!'
+#For the rest. NONE
+Chat-Disabled: 'Warning, you''ll not receive any chat if your &6&oSmartSpy &fturned on!. Please contact server &cAdmin!'
+Spied-Player-Quit: 'The player that you''re spying now, just left. Removing him / her from the &6&oSpyList &f...'
+#Oh and. If you decompiled this plugin...., I just want to say something...
+#This plugin take a lot of time to make, so just put 5 star rating if this plugin helped you. It will support me A LOT!
+#Ty for downloading!

@@ -1,0 +1,28 @@
+#  Welcome to config.yml  #
+# Btw, because I'm not really good at ENGLISH #
+# SOOO, I'm sorry if there's some grammar error :/ #
+
+#Prefix for the Plugin.
+Prefix: '&7[ &aSmartSpy &7]&f '
+#Prefix for the spy!. you can set this to disable if you don't like it.
+SpyPrefix: '&7[&cSpy&7] '
+#You an disable or enable this. please only put 'true' and 'false'
+EnableSpyPrefix: false
+#Make this to true if you want to enable the spy after you joined the server. Permission: spy.enableOnJoin < Player that has this perms will be enabled.
+#WARN, this may get annoying if you got a lot of player on your server!
+EnableOnJoin: false
+#Make this to true if you want to disable the spy after you leaved the server. Permission: spy.disableOnLeave < Player that has this perms will be disabled.
+DisableOnLeave: true
+#If you only want to spy for command and you don't want to-
+#get annoyed by other people's chat. You can use this. Only use 'true' and 'false'
+#Also this will only work on player that enabled their spy!
+#Perms to bypass : spy.bypass.chatreceive
+DisableChatReceive: false
+#Add a command here if you want to ignore it.
+#WARN > Please use " / " otherwise it will not work!
+#Also it will send you a message of Spy-Format-Blocked on the lang.yml. If you don't want it to send you that message set this to false
+ShowDisabledCommandMessage: true
+DisabledCommand:
+  - '/your'
+  - '/command'
+  - '/here'
